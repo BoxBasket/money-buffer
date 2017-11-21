@@ -3,27 +3,38 @@ Money managing sheet. Created to help me more finencially aware each day.
 
 ---
 ## Initial setup
-It is good idea to enter values that most likely will not change throghout the year. This is because a new monthly sheet is copied from sheet named `Base`. Below are suggested fields to fill out in the `Base` sheet.
+#### The money buffer sheet will officially become yours after this step
 
-* Year
-* Model buffer
-* Monthly Expense 
-* Income
+There should be some information will mostly stay the same throghout the year. These information should be entered to `Base` sheet. This way, everytime you start a new monthly sheet, you don't have to enter them again.
 
-## How to start a new month
-1. **Copy sheet named `Base`.** Everytime you start a new month, copy this sheet. Unfortunately there is no shiny button you can click to spawn a new clean template. 
-2. **Fill out month (and year, if you have not done so) on the top.** This populates correct dates into the sheet as well as highlight today's date in the daily chart.
-3. **In `Subtract from Pool` section,** enter amount you want to subtract from your pool in field `Actually Reserved`. This is the amount of money you promise yourself you will put into your savings account. Reference the amount in `Reservable` as model. That's the model amount you can save that will allow you to have amount shown in `model buffer` each day. The moment you enter your custom amount in `Actually Reserved`, the money buffer value in `Buffer` column will automatically update.
-4. **In `Add to Pool` section,** enter amount you want to add to your pool. This can be amount of unused buffer from last month or any extra money you decide to add to the pool (in case your pool is too small this month)
+![Alt text](fields_base.png "Edit these fields in Base sheet")
+
+1. **Monthly Expense**: Enter your constant monthly bills. 
+2. **Monthly Income**: Hopefully this is the same each month. 
+3. **Model Buffer**: This is how much daily buffer you would LIKE to have. It's a "model". The money buffer sheet will suggest you the amount of money you can reserve/save based on this number. 
+
+
+## Start a new month!
+
+Start a new sheet at `_controls` sheet. This button will copy `Base` sheet for you to use.
+![Alt text](controls_makeNew.png "Start a new month")
+
+Fill in the following fields to get your month started.
+![Alt text](fields_monthly.png "Edit these fields for your monthly sheet")
+
+1. **Fill out month (and year, if you have not done so) on the top.** This populates correct dates into the sheet as well as highlight today's date in the daily chart.
+2. **In `Subtract` section,** enter amount you want to subtract from your pool in field `Reserve`. This is the amount of money you promise yourself you will put into your savings account. Reference the amount in `(Suggested)`. That's the amount  you can save and have daily buffer amount of `model buffer` each day. The moment you enter your custom amount in `Reserve`, the money buffer value in `Buffer` column will automatically update.
+4. **In `Add` section,** enter amount you want to add to your pool. This can be amount of unused buffer from last month or any extra money you decide to add to the pool (in case your pool is too small this month)
 
 ## Recording Daily Expense
+#### Probably the most annoying part about the sheet
+
 Record your daily expense into the daily chart, and watch `Total Buffered` go up! (If you are spending less than your daily money buffer).
 
-Because it's just a single cell for you to record your daily expense, I recommend using formula such as:
-```
-=12.40+(9.00+4.13)
-``` 
-If you need to add a comment about the expense on that day, simply `right click > Insert comment` on the cell. I am aware this is not very efficient. I hope to make this easier in the future. 
+#### General "workflow"
+1. Select the radio button in the row representing the day you spent some money
+2. Enter amount you spent on the daily expense chart on the right side. 
+3. Click "submit" button.
 
 ## Other widgets
 There are some small (possibly useless) widgets that you can use to make your chart more friendly for you.
