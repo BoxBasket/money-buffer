@@ -38,3 +38,8 @@ There are some small (possibly useless) widgets that you can use to make your ch
 * **How to change the list of the icons:** the list of icons are stored in the `Data` sheet. Editing this list will change what icon appears in the dropdown.
 * **How to change the number of icons in the list:** to alter the amount of icons in the list, select the dropdown cell, go to `Data > Data Validation`. The reference to the array/vector of icons is set in `Source` field.
 
+---
+
+## Known Issues 
+
+* Known Issue: because money buffer is rounded, sometimes you will automatically will have +/-10 cents auto buffered even if you recorded no expense. 
