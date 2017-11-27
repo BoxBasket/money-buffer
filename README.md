@@ -7,7 +7,7 @@ Money managing sheet. Created to help me more finencially aware each day.
 
 There should be some information will mostly stay the same throghout the year. These information should be entered to `Base` sheet. This way, everytime you start a new monthly sheet, you don't have to enter them again.
 
-![Alt text](fields_base.png "Edit these fields in Base sheet")
+![Alt text](img/fields_base.png "Edit these fields in Base sheet")
 
 1. **Monthly Expense**: Enter your constant monthly bills. 
 2. **Monthly Income**: Hopefully this is the same each month. 
@@ -17,10 +17,10 @@ There should be some information will mostly stay the same throghout the year. T
 ## Start a new month!
 
 Start a new sheet at `_controls` sheet. This button will copy `Base` sheet for you to use.
-![Alt text](controls_makeNew.png "Start a new month")
+![Alt text](img/controls_makeNew.png "Start a new month")
 
 Fill in the following fields to get your month started.
-![Alt text](fields_monthly.png "Edit these fields for your monthly sheet")
+![Alt text](img/fields_monthly.png "Edit these fields for your monthly sheet")
 
 1. **Fill out month (and year, if you have not done so) on the top.** This populates correct dates into the sheet as well as highlight today's date in the daily chart.
 2. **In `Subtract` section,** enter amount you want to subtract from your pool in field `Reserve`. This is the amount of money you promise yourself you will put into your savings account. Reference the amount in `(Suggested)`. That's the amount  you can save and have daily buffer amount of `model buffer` each day. The moment you enter your custom amount in `Reserve`, the money buffer value in `Buffer` column will automatically update.
