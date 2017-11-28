@@ -1,7 +1,11 @@
 # money-buffer
 Money managing sheet. Created to help me more finencially aware each day. 
 
+Both version with macro and without macro is available. However, the version with macro is better maintained. 
+
 ---
+
+
 ## Initial setup
 #### The money buffer sheet will officially become yours after this step
 
@@ -20,16 +24,21 @@ Start a new sheet at `_controls` sheet. This button will copy `Base` sheet for y
 ![Alt text](img/controls_makeNew.png "Start a new month")
 
 Fill in the following fields to get your month started.
-![Alt text](img/fields_monthly.png "Edit these fields for your monthly sheet")
+![Monthly Bills](img/fields_monthly.png "Edit these fields for your monthly sheet")
 
 1. **Fill out month (and year, if you have not done so) on the top.** This populates correct dates into the sheet as well as highlight today's date in the daily chart.
 2. **In `Subtract` section,** enter amount you want to subtract from your pool in field `Reserve`. This is the amount of money you promise yourself you will put into your savings account. Reference the amount in `(Suggested)`. That's the amount  you can save and have daily buffer amount of `model buffer` each day. The moment you enter your custom amount in `Reserve`, the money buffer value in `Buffer` column will automatically update.
-4. **In `Add` section,** enter amount you want to add to your pool. This can be amount of unused buffer from last month or any extra money you decide to add to the pool (in case your pool is too small this month)
+3. **In `Add` section,** enter amount you want to add to your pool. This can be amount of unused buffer from last month or any extra money you decide to add to the pool (in case your pool is too small this month)
+
+> This process will finalize your `buffer pool`. This is the money that will be divided and distributed as `money buffer`.
+![Buffer Pool](img/fields_bufferPool.png "Image of Buffer Pool cell")
 
 ## Recording Daily Expense
 #### Probably the most annoying part about the sheet
 
-Record your daily expense into the daily chart, and watch `Total Buffered` go up! (If you are spending less than your daily money buffer).
+Record your daily expense into the daily chart, and watch `Total Buffered` go up (if you are spending moderately)!
+
+![Daily Recording Step](img/fields_daily.png "How to add details of your detail expense")
 
 #### General "workflow"
 1. Select the radio button in the row representing the day you spent some money
@@ -53,4 +62,4 @@ There are some small (possibly useless) widgets that you can use to make your ch
 
 ## Known Issues 
 
-* Known Issue: because money buffer is rounded, sometimes you will automatically will have +/-10 cents auto buffered even if you recorded no expense. 
+* **Rounding**: because money buffer is rounded, sometimes you will automatically will have +/-10 cents auto buffered even if you recorded no expense. 
